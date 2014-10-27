@@ -1,0 +1,164 @@
+#event {
+	.event-content {
+		h1 {
+			font-size: 32px;
+			font-family: $font-0;
+			margin-top: 20px;
+			padding-left: 15px;
+		}
+
+		h2 {
+			font-size: 14px;
+			font-family: $font-3;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			padding-left: 15px;
+		}
+
+		/*rounded drop shadows*/
+		.shadow {
+		  	position:relative;
+		  	display: table;
+		  	background:#e9e9e9;  
+    
+		    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		}
+		.shadow:before, .shadow:after {
+			content:"";
+		    position:absolute; 
+		    z-index:-1;
+		    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.6);
+		    -moz-box-shadow:0 0 20px rgba(0,0,0,0.6);
+		    box-shadow:0 0 20px rgba(0,0,0,0.6);
+		    top:50%;
+		    bottom:0;
+		    left:10%;
+		    right:10%;
+		    -moz-border-radius:30%;
+		    border-radius:30%;
+		}
+		/*End of rounded drop shadows*/
+
+		.col-center {
+			margin-bottom: 30px;
+		  	max-width: 310px; 
+			float: none;
+			margin-right: auto;
+			margin-left: auto;
+			a {
+				position: relative;
+				float: left;
+				display: block;
+				text-decoration: none;					
+				height: 430px;
+
+				.hover-item {						
+					display: none;	
+				}
+
+				&:hover .hover-item{	
+					display: block;
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					background: $gray-6;
+					opacity: 0.7;
+					top: 0;
+
+					.icon {
+					    position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%,-50%);
+						background-color: transparent;
+						border-radius: 50%;
+						font-size: 16px;
+						border: 2px solid $white;
+						text-align: center;
+						padding-top: 10px;
+						color: $white;
+						width: 40px;
+						height: 40px;
+					}
+				}
+			}
+
+			.item-bcg {
+				background-color: rgba(231,231,231,1);
+
+				/* The ellipsis classes reveal a '...' if there is more content that isn't being displayed */
+
+				/* The ellipsis-container class adds padding to the container to stop the ellipsis clipping text */
+				.ellipsis-container {
+				  padding-right: 1em;
+				  position: relative;
+				}
+
+				.ellipsis {
+				  background: inherit;
+				  display: inline;
+				}
+
+				.ellipsis:before,
+				.ellipsis:after {
+				  background: inherit;
+				  position: absolute;
+				}
+
+				.ellipsis:before {
+				  content: '\2026';
+				  bottom: 0;
+				  right: 4pt;
+				}
+
+				.ellipsis:after {
+				  content: '';
+				  height: 100%;
+				  width: 100%;
+				}
+
+				/* Clamping is just a mechanism to limit the number of lines that can be displayed in a container */
+				.clamped {
+				  line-height: 1.5;
+				  overflow: hidden;
+				}
+
+				.clamped-ml {
+				  /* Clamp to 4 lines, ie line-height x 2: */
+				  max-height: 6em;
+				}
+				/*End of ellipsis*/
+
+				img {
+					width: 100%;
+					border: none;
+				}
+				h3 {
+					font-size: 13pt;
+					font-family: $font-4;
+					color: $brown-0;
+					padding: 10px 10px 0px 10px;
+
+
+				}
+				h2 {
+					font-size: 18pt;
+					font-family: $font-3;
+					color: $brown-1;
+					padding: 5px 10px 0px 10px;
+				}
+				p {
+					font-size: 12pt;
+					font-family: $font-3;
+					color: $black;
+					padding: 0px 10px;
+					text-align: justify;
+					background: inherit;/*to hide ellipsis*/
+				}
+			}
+
+		}
+	}
+}

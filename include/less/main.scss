@@ -1,0 +1,29 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+@import "variables.scss";
+
+@import "general/base.scss";
+@import "general/nav.scss";
+@import "general/footer.scss";
+@import "general/content.scss";
+/*@import "home/jquery.bxslider.css";*/
+
+@import "about/about.scss";
+@import "home/home.scss";
+@import "apps/apps.scss";
+@import "contact/contact.scss";
+@import "events/events.scss";
+@import "events/news-events.scss";
+@import "font/icon-fonts.css";
+@import "font/icon-fonts.css";
+@import "font/icon-fonts.css";
+
+
+
+/*@import "fonts/icon-fonts-ie7-codes.css";
+@import "fonts/icon-fonts-ie7.css";
+@import "fonts/icon-fonts.css";*/
+
+
