@@ -3,10 +3,6 @@ module.exports = function (grunt) {
         {
             pkg: grunt.file.readJSON('package.json'),
 
-            jshint: {
-                all: ['../include/js/**/*.js']
-            },
-
             concat: {
                 options: {
                     separator: ';'
@@ -63,7 +59,7 @@ module.exports = function (grunt) {
 
                 set1: {
                     files: ['../include/js/**/*.js'],
-                    tasks: ['jshint','concat','uglify']
+                    tasks: ['concat','uglify']
                 },
                 set2: {
                     files: ['../include/less/**/*'],
@@ -73,10 +69,9 @@ module.exports = function (grunt) {
             }
 
         });
-    grunt.registerTask('build', ['jshint', 'concat', 'uglify', 'less:development','cssmin']);
+    grunt.registerTask('build', ['concat', 'uglify', 'less:development','cssmin']);
     grunt.registerTask('start', ['build','watch']);
     grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
