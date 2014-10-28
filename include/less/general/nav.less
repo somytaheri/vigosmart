@@ -1,7 +1,7 @@
 
 #heading {
 	position: relative;
-	background-color: $gray-0;
+	background-color: @gray-0;
 	min-height: 73px;
 	.logo {
 		width: 180px;
@@ -31,13 +31,13 @@
 				cursor: default;
 				pointer-events: none;
 				a {
-					color : $gray-5;
+					color : @gray-5;
 				}
 			}
 		}
 
 		.navbar-default {
-			background-color: $gray-0;
+			background-color: @gray-0;
 			border:none;
 		}
 
@@ -64,8 +64,8 @@
 		 	margin-right: 0;
  			li {
  				a {
-					color: $gray-1;
-					font-family: $font-0;
+					color: @gray-1;
+					font-family: @font-0;
 					text-transform: uppercase;
 				}
 			}
@@ -75,7 +75,7 @@
 	}
 }
 
-@media (min-width: $min-small){
+@media (min-width: @min-small){
 	#heading {
 	height: 80px;
 		.logo{
@@ -105,7 +105,7 @@
 	 }
 }
 
-@media (min-width: $min-medium){
+@media (min-width: @min-medium){
 	#heading {
 		height: 90px;
 		.logo{

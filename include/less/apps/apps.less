@@ -1,6 +1,6 @@
 #apps {
 	.apps-content {
-		color: $white;
+		color: @white;
 		background-repeat:  no-repeat;
 	    background-position: center center;
 	    background-size: cover;
@@ -28,29 +28,29 @@
 		/* End of Center vertically */
 
 	    h2 {
-	    	font-family: $font-0;
+	    	font-family: @font-0;
 	    	font-size: 23pt;
 	    	margin-top: 35px;
 	    	margin-bottom: 30px;
 	    }	
 	    h3 {
-	    	font-family: $font-0;
+	    	font-family: @font-0;
 	    	font-size: 20pt;
 	    }
 	    h4 {
-	    	font-family: $font-0;
+	    	font-family: @font-0;
 	    	font-size: 13pt;
 	    	font-weight: bold;
 	    }
 	    p {
-	    	font-family: $font-0;
+	    	font-family: @font-0;
 	    	font-size: 12pt;
-	    	color: $white;
+	    	color: @white;
 	    	margin-bottom: 15px;
 	    	margin-top: 15px;
 	    }
 	    ul {
-			font-family: $font-0;
+			font-family: @font-0;
 	    	font-size: 12pt;
 	    	margin-bottom: 55px;
 	    	margin-top: 15px;
@@ -76,7 +76,7 @@
 		}
     }
 
-    @media (min-width: $min-small){
+    @media (min-width: @min-small){
     	.web-store {
 	    	text-align: left;
     		.web-store-logo {
@@ -90,7 +90,7 @@
 	    .apps-content {
 		    .phone {
 		    	display: block;
-		    	background: url(/../images/apps/phone.png) no-repeat;
+		    	background: url(/../../public/image/apps/phone.png) no-repeat;
 		    	background-size: 231px 433.5px;
 		    	z-index: 100;
 		    	position: absolute;
@@ -120,7 +120,7 @@
 	 		}
  		}
     }
-    @media (min-width: $min-medium){
+    @media (min-width: @min-medium){
     	.app-logo {
         	margin-left: 150px;
 		}

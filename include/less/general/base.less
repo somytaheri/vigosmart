@@ -1,26 +1,26 @@
 
 /*===========fonts===============*/ 
 @font-face {
-    font-family: $font-0;
+    font-family: @font-0;
     src: font-url("../font/RobotoThin.ttf");
 }
 
 @font-face {
-    font-family: $font-1;
+    font-family: @font-1;
     src: font-url("../font/RobotoLight.ttf");
 }
 
 @font-face {
-    font-family: $font-2;
+    font-family: @font-2;
     src: font-url("../font/RobotoRegular.ttf");
 }
 
 @font-face {
-    font-family: $font-3;
+    font-family: @font-3;
     src: font-url("../font/RobotoCondensedLight.ttf");
 }
 @font-face {
-    font-family: $font-4;
+    font-family: @font-4;
     src: font-url("../font/RobotoCondensedRegular.ttf");
 }
 
@@ -36,11 +36,11 @@ html{
 body{
 	padding: 0;
 	margin: 0 0 97px 0;
-	color: $black ;
-	font-family: $font-3;
+	color: @black ;
+	font-family: @font-3;
 	/*height: 100%;*/
-	background-color: $gray-0;
-	@media (min-width: $min-small) {
+	background-color: @gray-0;
+	@media (min-width: @min-small) {
 		margin: 0 0 175px 0;
 	}
 }
@@ -48,11 +48,11 @@ body{
 p {
 	margin: 0;
 	padding: 0;
-	color: $black;
+	color: @black;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: $white;
+	color: @white;
 	font-weight: normal;
 	margin: 0;
 	padding: 0;

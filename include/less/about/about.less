@@ -14,7 +14,7 @@
 
 	.h-title1 {
 		font-size: 24px;
-		font-family:  $font-0;
+		font-family:  @font-0;
 		padding-left: 25px;
 		margin-top: 20px;
 		margin-bottom: 10px;
@@ -35,12 +35,12 @@
 	.img-circle {
 		width: 150px;
 		height: 150px;
-		border: 5px solid $white;
-		background-color: $gray-3;		
+		border: 5px solid @white;
+		background-color: @gray-3;		
 	}
 
 	.vertLine {
-		border-left: 1px solid $white;
+		border-left: 1px solid @white;
 		height: 500px;
 	}
 
@@ -53,7 +53,7 @@
 		height: 91px;
 		width: 56px;
 		margin: 10px 0;
-		background: url(/../images/general/sprite.png) no-repeat 0 -170px; 
+		background: url(/../../public/image/general/sprite.png) no-repeat 0 -170px; 
 	}
 
 	.spriteFounder2 {
@@ -61,7 +61,7 @@
 		height: 52px;
 		width: 151px;
 		margin: 27px 0;
-		background: url(/../images/general/sprite.png) no-repeat 0 0px;
+		background: url(/../../public/image/general/sprite.png) no-repeat 0 0px;
 	}
 
 	#founder {
@@ -72,7 +72,7 @@
 			margin-bottom: 10px;
 		}
 		 h1 {
-			color: $blue-0;
+			color: @blue-0;
 			font-size: 18pt;
 			font-weight: normal;
 			margin-top: 70px;
@@ -86,7 +86,7 @@
     }
 
 
-	@media (min-width: $min-small) {
+	@media (min-width: @min-small) {
 		.service {
 			padding-top: 125px;
 		}
@@ -96,16 +96,16 @@
 			position: absolute;
 			top: 200px;
 			left: 50%;
-			border-left: 1px solid $white;
+			border-left: 1px solid @white;
 			height: 375px;
 			.icon {
-				background-color: $white;
+				background-color: @white;
 				border-radius: 50%;
 				font-size: 14px;
 				text-align: center;
 				padding-top: 10px;
 				display: block;
-				color: $blue-1;
+				color: @blue-1;
 				width: 35px;
 				height: 35px;
 				font-style: normal;

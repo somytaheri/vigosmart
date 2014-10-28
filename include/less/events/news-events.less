@@ -6,8 +6,8 @@
 
 	.title-style {
 			font-size: 23px;
-			font-family: $font-0;
-			color: $white ;
+			font-family: @font-0;
+			color: @white ;
 			margin-top: 35px;
 			margin-bottom: 30px;
 	}
@@ -18,7 +18,7 @@
 	.shadow {/*rounded drop shadows*/
 	  	position:relative;
 	  	display: table;
-	  	background:$white;       
+	  	background:@white;       
 	    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
         -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
         box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -39,51 +39,51 @@
 	    /*display: block;*/
 	}
 	.event-bcg {
-		background-color: 	 $white ;
+		background-color: 	 @white ;
 		display: table;
 
 		h3 {
 			font-size: 13px;
-			font-family: $font-0;
-			color: $black ;
+			font-family: @font-0;
+			color: @black ;
 			margin: 15px 15px 15px 15px;
 		}
 
 		h2 {
 			font-size: 18px;
-			font-family: $font-0;
-			color: $brown-1 ;
+			font-family: @font-0;
+			color: @brown-1 ;
 			margin: 15px 15px 15px 15px;
 		}
 		p {
 			font-size: 12px;
-			font-family: $font-0;
-			color: $black ;	
+			font-family: @font-0;
+			color: @black ;	
 			margin: 15px 15px 15px 15px;
 		}
 		a {
 			text-decoration: none;
-			color: $black ;
+			color: @black ;
 		}
 		.text-pad {
 			margin-top: 15px;
 		}
 	}
 	.back-list {
-		background-color: $gray-0;
-		border: 1px solid $gray-3;
+		background-color: @gray-0;
+		border: 1px solid @gray-3;
 		font-size: 14px;
-/*		font-family: $font-0;*/
+/*		font-family: @font-0;*/
 		text-align: center;
 		padding: 5px 5px;
-		color: $gray-3;
+		color: @gray-3;
 		position: absolute;
 		top: -17px;
 		right: 20px;
 		word-spacing: -10px;
 
 	}
-	@media (min-width: $min-small) {
+	@media (min-width: @min-small) {
 		.event-bcg {
 			[class*="col-"] {
 				padding: 0;

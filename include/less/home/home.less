@@ -1,11 +1,11 @@
 #home {
 	.main-content {
-		background-color: $gray-0;
+		background-color: @gray-0;
 		a {
 			text-decoration: none;
 		}
 		.btwn-section {
-			background-color: $gray-0;
+			background-color: @gray-0;
 		}
 		/* This parent can be any width and height */
 		.block {
@@ -27,14 +27,14 @@
 		}
 
 		.icon1 {
-			background-color: $purple-0;
+			background-color: @purple-0;
 			border-radius: 50%;
 			font-size: 60px;
-		/*	border: 2px solid $white;*/
+		/*	border: 2px solid @white;*/
 			text-align: center;
 			padding-top: 19px;
 			display: inline-block;
-			color: $white;
+			color: @white;
 			width: 94px;
 			height: 94px;
 			font-style: normal;
@@ -46,12 +46,12 @@
 			transform: translate(-50%,-50%);
 			background-color: transparent;
 			font-size: 55px;
-			color: $gray-3 ;
+			color: @gray-3 ;
 		}
 
 		/*-----------------------Slider begin-----------------------*/
     	#slider1_container {
-	    	background-color: $purple-1;
+	    	background-color: @purple-1;
 	    	position: fixed;
 	    	margin: 0 auto;
 	    	top: 0px;
@@ -85,7 +85,7 @@
 	    			text-align: left; 
 	    			line-height: 36px; 
 	    			font-size: 30px; 
-	    			color: $white;
+	    			color: @white;
 	    		}
 
 	    	}
@@ -93,7 +93,7 @@
 	        	position: absolute;
 	        	cursor: pointer;
 	        	display: block;
-	            background: url(/../images/home/a21.png) center center no-repeat;
+	            background: url(/../../public/image/home/a21.png) center center no-repeat;
 	            overflow: hidden;
 	            width: 55px;
 	            height: 55px; 
@@ -169,7 +169,7 @@
 							position: absolute;
 							width: 100%;
 							height: 100%;
-							background: $gray-6;
+							background: @gray-6;
 							opacity: 0.7;
 							top: 0;
 							z-index: 110;
@@ -182,10 +182,10 @@
 								background-color: transparent;
 								border-radius: 50%;
 								font-size: 16px;
-								border: 2px solid $white;
+								border: 2px solid @white;
 								text-align: center;
 								padding-top: 10px;
-								color: $white;
+								color: @white;
 								width: 40px;
 								height: 40px;
 							}
@@ -243,22 +243,22 @@
 					}
 					h3 {
 						font-size: 13pt;
-						font-family: $font-4;
-						color: $brown-0;
+						font-family: @font-4;
+						color: @brown-0;
 						padding: 10px 10px 0px 10px;
 					}
 					h2 {
 						font-size: 18pt;
-						font-family: $font-3;
-						color: $brown-1;
+						font-family: @font-3;
+						color: @brown-1;
 						padding: 5px 10px 0px 10px;
 						margin-top: 10px;
 						margin-bottom: 20px;
 					}
 					p {
 						font-size: 12pt;
-						font-family: $font-3;
-						color: $black;
+						font-family: @font-3;
+						color: @black;
 						padding: 0px 10px;
 						text-align: justify;
 						background: inherit;/*to hide ellipsis*/
@@ -269,7 +269,7 @@
 
 
 		#bcg-2 {			
-			background-image:url('/../images/home/skrollr-img-02.jpg');			
+			background-image:url('/../../public/image/home/skrollr-img-02.jpg');			
 			min-height: 80%;
 			.shadow a {
 				height: 430px;
@@ -277,7 +277,7 @@
 		} 
 
 		#bcg-3 {
-			background-image:url('/../images/home/skrollr-img-03.jpg');
+			background-image:url('/../../public/image/home/skrollr-img-03.jpg');
 			min-height: 80%;
 		}
 
@@ -287,7 +287,7 @@
 				padding: 15px 0 15px 0;
 			}
 			.app-text {
-				font-family: $font-1 ;
+				font-family: @font-1 ;
 				font-size: 28px;
 				color: #492c1e;
 				padding: 40px 0 15px 0;
@@ -310,7 +310,7 @@
 		}
 		.h1-style {
 			font-size: 32px;
-			font-family: $font-0;
+			font-family: @font-0;
 			margin-top: 50px;
 			padding-left: 25px;
 			float: left
@@ -321,15 +321,15 @@
 			padding-right: 25px;
 		}
 		.icon2 {
-			background-color: $blue-4;
+			background-color: @blue-4;
 			font-size: 30px;
 			text-align: center;
-			color: $white;
+			color: @white;
 		}
 
 		.h2-style {
 			font-size: 14px;
-			font-family: $font-3;
+			font-family: @font-3;
 			margin-top: 10px;
 			margin-bottom: 20px;
 			padding-left: 25px;
@@ -340,16 +340,16 @@
 		@media (min-width: 450px ){
 			.app-bcg {
 				background: rgba(231,231,231,0.8); /* Old browsers */
-			    background: -moz-linear-gradient(top, $gray-8 0%, $gray-8 60%, $white 60%, $white 100%); /* FF3.6+ */
-			    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$gray-8), color-stop(60%,$gray-8), color-stop(60%,$white), color-stop(100%,$white)); /* Chrome,Safari4+ */
-			    background: -webkit-linear-gradient(top, $gray-8 0%,$gray-8 60%,$white 60%,$white 100%); /* Chrome10+,Safari5.1+ */
-			    background: -o-linear-gradient(top, $gray-8 0%,$gray-8 60%,$white 60%,$white 100%); /* Opera11.10+ */
-			    background: -ms-linear-gradient(top, $gray-8 0%,$gray-8 60%,$white 60%,$white 100%); /* IE10+ */
-			    background: linear-gradient(top, $gray-8 0%,$gray-8 60%,$white 60%,$white 100%); /* W3C */
+			    background: -moz-linear-gradient(top, @gray-8 0%, @gray-8 60%, @white 60%, @white 100%); /* FF3.6+ */
+			    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@gray-8), color-stop(60%,@gray-8), color-stop(60%,@white), color-stop(100%,@white)); /* Chrome,Safari4+ */
+			    background: -webkit-linear-gradient(top, @gray-8 0%,@gray-8 60%,@white 60%,@white 100%); /* Chrome10+,Safari5.1+ */
+			    background: -o-linear-gradient(top, @gray-8 0%,@gray-8 60%,@white 60%,@white 100%); /* Opera11.10+ */
+			    background: -ms-linear-gradient(top, @gray-8 0%,@gray-8 60%,@white 60%,@white 100%); /* IE10+ */
+			    background: linear-gradient(top, @gray-8 0%,@gray-8 60%,@white 60%,@white 100%); /* W3C */
 			
 			    .phone {
 			    	display: block;
-			    	background: url(/../images/apps/phone.png) no-repeat;
+			    	background: url(/../../public/image/apps/phone.png) no-repeat;
 			    	background-size: 162px 304px;
 			    	z-index: 100;
 			    	height: 304px;
