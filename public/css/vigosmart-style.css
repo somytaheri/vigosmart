@@ -6474,7 +6474,7 @@ h6 {
   font-size: 14px;
   font-family: RobotoCondensedLight;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   padding-left: 25px;
   clear: both;
 }
@@ -6517,6 +6517,14 @@ h6 {
   #home .main-content .app-bcg .phone .phone-app img {
     width: 139px;
     height: 229px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #home .main-content .app-bcg .app-logo {
+    width: 80px;
+  }
+  #home .main-content .app-bcg .app-text {
+    font-size: 22px;
   }
 }
 #apps .apps-content {
@@ -6603,7 +6611,7 @@ h6 {
   }
   #apps .apps-content .phone {
     display: block;
-    background: url(../public/image/apps/phone.png) no-repeat;
+    background: url(../image/apps/phone.png) no-repeat;
     background-size: 231px 433.5px;
     z-index: 100;
     position: absolute;
@@ -6656,18 +6664,13 @@ h6 {
     height: 437px;
   }
 }
-body #contact {
+#contact {
   margin-bottom: 400px;
 }
 @media (min-width: 768px) {
-  body {
+  #contact {
     margin-bottom: 175px;
   }
-}
-#contact .contact-content {
-  /*to keep the footer down */
-  /*padding-bottom: 156px;	
-		overflow:auto;*/
 }
 #contact .contact-content .contact-title {
   font-family: RobotoThin;
@@ -6766,10 +6769,10 @@ body #contact {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  #contact .contact-content .form-wrapper {
+  #contact .contact-content .form-bcg .form-wrapper {
     width: 75%;
   }
-  #contact .contact-content .message-wrapper {
+  #contact .contact-content .message-bcg .message-wrapper {
     width: 75%;
   }
   #contact .contact-content .google-map {
@@ -6927,10 +6930,8 @@ body #contact {
   background: inherit;
   /*to hide ellipsis*/
 }
-#news-event .news-content {
-  /*to keep the footer down */
-  padding-bottom: 156px;
-  overflow: auto;
+#news-event .content-wrapper {
+  padding-bottom: 30px;
 }
 #news-event .title-style {
   font-size: 23px;
@@ -6965,11 +6966,12 @@ body #contact {
   right: 10px;
   -moz-border-radius: 30%;
   border-radius: 30%;
-  /*display: block;*/
 }
 #news-event .event-bcg {
   background-color: #ffffff;
-  display: table;
+}
+#news-event .event-bcg [class*="col-"] {
+  padding: 0;
 }
 #news-event .event-bcg h3 {
   font-size: 13px;
@@ -7000,7 +7002,6 @@ body #contact {
   background-color: #f0f0f0;
   border: 1px solid #c9c9c9;
   font-size: 14px;
-  /*		font-family: @font-0;*/
   text-align: center;
   padding: 5px 5px;
   color: #c9c9c9;
@@ -7008,11 +7009,6 @@ body #contact {
   top: -17px;
   right: 20px;
   word-spacing: -10px;
-}
-@media (min-width: 768px) {
-  #news-event .event-bcg [class*="col-"] {
-    padding: 0;
-  }
 }
 /*@import "fonts/icon-fonts-ie7-codes.css";
 @import "fonts/icon-fonts-ie7.css";
