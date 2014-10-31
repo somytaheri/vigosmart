@@ -5834,6 +5834,9 @@ h6 {
   margin: 0;
   padding: 0;
 }
+img {
+  border: none;
+}
 #heading {
   position: relative;
   background-color: #f0f0f0;
@@ -6024,14 +6027,14 @@ h6 {
   }
 }
 .content-wrapper {
-  /* min-height: 100%;*/
-  /*to keep the footer down */
   -webkit-box-shadow: 0px 625px 150px -85px #5fa9d8 inset;
+  -moz-box-shadow: 0px 625px 150px -85px #5fa9d8 inset;
   box-shadow: 0 625px 150px -85px #5fa9d8 inset;
 }
 @media (min-width: 768px) {
   .content-wrapper {
     -webkit-box-shadow: 0px 500px 150px -85px #5fa9d8 inset;
+    -moz-box-shadow: 0px 500px 150px -85px #5fa9d8 inset;
     box-shadow: 0 500px 150px -85px #5fa9d8 inset;
   }
 }
@@ -6175,7 +6178,7 @@ h6 {
 #home .main-content .block:before {
   content: '';
   display: inline-block;
-  height: 140px;
+  height: 72px;
   vertical-align: middle;
 }
 #home .main-content .centered {
@@ -6185,20 +6188,21 @@ h6 {
 #home .main-content .icon1 {
   background-color: #9c86aa;
   border-radius: 50%;
-  font-size: 60px;
-  /*	border: 2px solid @white;*/
+  font-size: 30px;
   text-align: center;
-  padding-top: 19px;
+  padding-top: 9px;
   display: inline-block;
   color: #ffffff;
-  width: 94px;
-  height: 94px;
+  width: 44px;
+  height: 44px;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   pointer-events: none;
 }
 #home .main-content .icon4 {
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: transparent;
   font-size: 55px;
@@ -6223,6 +6227,10 @@ h6 {
 }
 #home .main-content #slider1_container .slider img {
   border: none;
+}
+#home .main-content #slider1_container .slider .slider-img {
+  width: 100%;
+  height: 100%;
 }
 #home .main-content #slider1_container .slider .caption-img {
   position: absolute;
@@ -6277,7 +6285,7 @@ h6 {
   position: relative;
   z-index: 9;
   width: 100%;
-  margin-top: 45%;
+  margin-top: 38%;
 }
 #home .main-content .bcg-slide {
   background-position: center center;
@@ -6339,6 +6347,8 @@ h6 {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: transparent;
   border-radius: 50%;
@@ -6517,6 +6527,20 @@ h6 {
   #home .main-content .app-bcg .phone .phone-app img {
     width: 139px;
     height: 229px;
+  }
+}
+@media (min-width: 768px) {
+  #home .main-content .icon1 {
+    font-size: 60px;
+    padding-top: 19px;
+    width: 94px;
+    height: 94px;
+  }
+  #home .main-content .block:before {
+    content: '';
+    display: inline-block;
+    height: 140px;
+    vertical-align: middle;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -6856,6 +6880,8 @@ h6 {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: transparent;
   border-radius: 50%;

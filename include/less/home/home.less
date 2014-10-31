@@ -15,7 +15,7 @@
 		.block:before {
 		  content: '';
 		  display: inline-block;
-		  height: 140px;
+		  height: 72px;
 		  vertical-align: middle;
 
 		}
@@ -29,20 +29,21 @@
 		.icon1 {
 			background-color: @purple-0;
 			border-radius: 50%;
-			font-size: 60px;
-		/*	border: 2px solid @white;*/
+			font-size: 30px;
 			text-align: center;
-			padding-top: 19px;
+			padding-top: 9px;
 			display: inline-block;
 			color: @white;
-			width: 94px;
-			height: 94px;
+			width: 44px;
+			height: 44px;
 			font-style: normal;
 			font-weight: normal;
 			font-variant: normal;
 			pointer-events: none;
 		}
 		.icon4 {
+			-webkit-transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%,-50%);
 			transform: translate(-50%,-50%);
 			background-color: transparent;
 			font-size: 55px;
@@ -67,6 +68,11 @@
     			overflow: hidden;
 	    		img {
 	    			border: none;
+	    		}
+	    		.slider-img {
+	    			width: 100%;
+	    			height: 100%; 
+
 	    		}
 	    		.caption-img {
 	    			position: absolute;
@@ -115,7 +121,7 @@
 			position: relative;
 			z-index: 9;
 			width: 100%;
-			margin-top: 45%;
+			margin-top: 38%;
 		}
 
 		.bcg-slide {
@@ -178,6 +184,8 @@
 							    position: absolute;
 								top: 50%;
 								left: 50%;
+								-webkit-transform: translate(-50%,-50%);
+								-ms-transform: translate(-50%,-50%);
 								transform: translate(-50%,-50%);
 								background-color: transparent;
 								border-radius: 50%;
@@ -338,6 +346,7 @@
 
 
 		@media (min-width: 450px ){
+			
 			.app-bcg {
 				background: rgba(231,231,231,0.8); /* Old browsers */
 			    background: -moz-linear-gradient(top, @gray-8 0%, @gray-8 60%, @white 60%, @white 100%); /* FF3.6+ */
@@ -371,6 +380,22 @@
 			    	}
 		 		}
 	 		}
+	 	}
+	 	@media (min-width: @min-small ){
+	 		.icon1 {
+				font-size: 60px;
+				padding-top: 19px;
+				width: 94px;
+				height: 94px;
+			}
+			.block:before {
+			  content: '';
+			  display: inline-block;
+			  height: 140px;
+			  vertical-align: middle;
+
+			}
+
 	 	}
 	 	@media (min-width: @min-small) and (max-width: @min-medium){
 			.app-bcg {
