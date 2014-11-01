@@ -1,0 +1,120 @@
+
+#heading {
+	position: relative;
+	background-color: @gray-0;
+	min-height: 73px;
+	.logo {
+		width: 180px;
+		height: 52px;
+	}
+
+	.navbar-wrapper {
+		/*overlaying navigaion*/
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1000;
+		[class*="col-"] {
+			padding: 0;
+		}
+
+		 .container {
+			padding-right: 0;
+			padding-left: 0;
+		}
+
+		.navbar {
+			min-height: 0; 
+			margin-bottom: 0; 
+			.current {		
+				cursor: default;
+				pointer-events: none;
+				a {
+					color : @gray-5;
+				}
+			}
+		}
+
+		.navbar-default {
+			background-color: @gray-0;
+			border:none;
+		}
+
+		.navbar-brand {
+			float: none;
+			padding: 0 0;
+		}
+
+		.navbar-toggle {
+			margin-right: 0;
+			margin-left: 0;
+		}
+
+		.navbar-header {
+			padding: 10px 15px;
+		}
+
+		.navbar-collapse {
+			padding: 0;
+		}
+
+		.navbar-nav {
+		 	margin-left: 10px;
+		 	margin-right: 0;
+ 			li {
+ 				a {
+					color: @gray-1;
+					font-family: @font-0;
+					text-transform: uppercase;
+				}
+			}
+
+		 }
+
+	}
+}
+
+@media (min-width: @min-small){
+	#heading {
+	height: 80px;
+		.logo{
+		width: 184px;
+		height: 53px;
+		}
+	}
+
+	.vcenter { /*to align vertically*/
+	    display: table-cell;
+	    vertical-align: middle;
+	    float: none;
+	}
+
+	.navbar { /*to align vertically*/
+		display: table;
+		table-layout: fixed;
+		width: 100%
+	}
+
+	.navbar-default { /*vertical align works properly in moz*/
+			width: 100%
+	}
+
+	 .navbar-nav {
+	 	float: right;
+	 }
+}
+
+@media (min-width: @min-medium){
+	#heading {
+		height: 90px;
+		.logo{
+			width: 245px;
+			height: 70px;
+		}
+	}
+}
+
+
+
+
