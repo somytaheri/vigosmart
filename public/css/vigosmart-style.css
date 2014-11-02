@@ -6057,14 +6057,14 @@ img {
 #about .h-title1 {
   font-size: 24px;
   font-family: RobotoThin;
-  padding-left: 25px;
+  /*		padding-left: 25px;*/
   margin-top: 20px;
   margin-bottom: 10px;
   font-weight: 200;
 }
 #about .h-title2 {
   font-size: 28px;
-  padding-left: 25px;
+  /*		padding-left: 25px;*/
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -6076,10 +6076,6 @@ img {
   height: 150px;
   border: 5px solid #ffffff;
   background-color: #c9c9c9;
-}
-#about .vertLine {
-  border-left: 1px solid #ffffff;
-  height: 500px;
 }
 #about .founder-content {
   margin-bottom: 20px;
@@ -6099,7 +6095,7 @@ img {
   background: url(../image/general/sprite.png) no-repeat 0 0px;
 }
 #about #founder {
-  margin-top: 35px;
+  /*	margin-top: 35px;*/
 }
 #about #founder p {
   margin-top: 10px;
@@ -6114,11 +6110,17 @@ img {
   padding: 0;
 }
 #about .vert-line {
+  border-left: 1px solid #ffffff;
+  height: 500px;
   display: none;
 }
 @media (min-width: 768px) {
   #about .service {
     padding-top: 125px;
+    padding-left: 25px;
+  }
+  #about .whyvigo {
+    padding-right: 25px;
   }
   #about .vert-line {
     display: block;
@@ -6154,6 +6156,9 @@ img {
   #about .icon-angle-down {
     margin-top: 120px;
     margin-left: -50%;
+  }
+  #about #founder {
+    margin-top: 35px;
   }
 }
 /*  /#about  */
@@ -6580,7 +6585,7 @@ img {
 #apps .apps-content h2 {
   font-family: RobotoThin;
   font-size: 23pt;
-  margin-top: 35px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 #apps .apps-content h3 {
@@ -6777,6 +6782,7 @@ img {
 #contact .contact-content .message-bcg .message-wrapper {
   width: 85%;
   margin: 0px auto;
+  font-size: 20px;
 }
 #contact .footer .footer-contact {
   background-color: #dbdcdd;
@@ -6789,9 +6795,9 @@ img {
 }
 @media (min-width: 768px) {
   #contact .contact-content .contact-title {
-    font-size: 28pt;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    font-size: 23pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   #contact .contact-content .form-bcg .form-wrapper {
     width: 75%;
@@ -6801,7 +6807,7 @@ img {
   }
   #contact .contact-content .google-map {
     position: absolute;
-    top: 191px;
+    top: 165px;
     z-index: 0;
     min-height: 75%;
   }
@@ -6815,17 +6821,17 @@ img {
   /*End of rounded drop shadows*/
 }
 #event .event-content h1 {
-  font-size: 32px;
+  font-size: 23pt;
   font-family: RobotoThin;
   margin-top: 20px;
-  padding-left: 15px;
+  /*			padding-left: 15px;*/
 }
 #event .event-content h2 {
   font-size: 14px;
   font-family: RobotoCondensedLight;
   margin-top: 10px;
   margin-bottom: 20px;
-  padding-left: 15px;
+  /*			padding-left: 15px;*/
 }
 #event .event-content .shadow {
   position: relative;
@@ -6959,12 +6965,13 @@ img {
 #news-event .content-wrapper {
   padding-bottom: 30px;
 }
-#news-event .title-style {
-  font-size: 23px;
+#news-event .title-style h1 {
+  font-size: 23pt;
   font-family: RobotoThin;
   color: #ffffff;
-  margin-top: 35px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 0;
 }
 #news-event img {
   width: 100%;
