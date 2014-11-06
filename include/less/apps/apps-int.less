@@ -1,0 +1,149 @@
+#apps-int {
+	.apps-content {
+		color: @white;
+		background-repeat:  no-repeat;
+	    background-position: center center;
+	    background-size: cover;
+	    min-height: 600px;
+
+		.container {
+			position: relative;
+			height: 100%;
+		}
+
+		/* Center vertically */
+		.block {
+		  text-align: center; 
+		}
+		.block:before {
+		  content: '';
+		  display: inline-block;
+		  height: 140px;
+		  vertical-align: middle;
+		}		
+		.centered {
+		  display: inline-block;
+		  vertical-align: middle;
+		}
+		/* End of Center vertically */
+
+	    h2 {
+	    	font-family: @font-0;
+	    	font-size: 23pt;
+	    	margin-top: 20px;
+	    	margin-bottom: 30px;
+	    }	
+	    h3 {
+	    	font-family: @font-0;
+	    	font-size: 20pt;
+	    }
+	    h4 {
+	    	font-family: @font-0;
+	    	font-size: 13pt;
+	    	font-weight: bold;
+	    }
+	    p {
+	    	font-family: @font-0;
+	    	font-size: 12pt;
+	    	color: @white;
+	    	margin-bottom: 15px;
+	    	margin-top: 15px;
+	    }
+	    ul {
+			font-family: @font-0;
+	    	font-size: 12pt;
+	    	margin-bottom: 55px;
+	    	margin-top: 15px;
+	    }
+
+		.phone {
+			display: none;
+		}
+	}
+
+   .web-store {
+    	margin-top: -20px;
+    	text-align: center;
+    	.web-store-logo {
+    		margin: 20px 0;    	
+	    	a {
+	    		text-decoration: none;
+	    	}
+    	}
+		.app-logo {
+			margin-top: -20px;
+			margin-bottom: 10px;
+		}
+    }
+
+    @media (min-width: @min-small){
+    	.web-store {
+	    	text-align: left;
+    		.web-store-logo {
+	    		margin: 0;    	
+    		}
+    	}
+    	#slider1_container {
+	    	height: 433.5px;
+	    	width: 231px;
+	    }
+	    .apps-content {
+		    .phone {
+		    	display: block;
+		    	background: url(../image/apps/phone.png) no-repeat;
+		    	background-size: 231px 433.5px;
+		    	z-index: 100;
+		    	position: absolute;
+				bottom: -40px;
+		    	right: 15px;
+		    	overflow: hidden;
+		    	.light-phone {
+				position: absolute;
+				top: 50px;
+				left: 18px;
+				width: 101px;
+				z-index: 10;
+		    	}
+		    	.phone-app {
+		    		position:absolute;
+		    		margin:0px 5px 5px 0px;
+		    		float:left;
+		    		top:50px;
+		    		left:16px;
+		    		width:198px;
+		    		height:326.25px;
+		    		overflow:hidden;
+		    		img {
+		    			border: none;
+		    		}
+		    	}
+	 		}
+ 		}
+    }
+    @media (min-width: @min-medium){
+    	.app-logo {
+        	margin-left: 150px;
+		}
+    	#slider1_container {
+	    	height: 578px;
+	    	width: 308px;
+	    }
+	    .apps-content {
+		    .phone {
+		    	background-size: 308px 578px;
+		    	.light-phone {
+					top: 67px;
+					left: 24px;
+					width: 135px;
+		    	}
+		    	.phone-app {
+		    		margin:0px 5px 5px 0px;
+		    		top:67px;
+		    		left:22px;
+		    		width:265px;
+		    		height:437px;
+		    	}
+		    }
+		}
+    }
+}
