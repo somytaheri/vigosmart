@@ -1,9 +1,6 @@
 #home {
 	.main-content {
 		background-color: @gray-0;
-		a {
-			text-decoration: none;
-		}
 		.btwn-section {
 			background-color: @gray-0;
 		}
@@ -24,6 +21,7 @@
 		.centered {
 		  display: inline-block;
 		  vertical-align: middle;
+		  line-height: 44px;
 		}
 
 		.icon1 {
@@ -31,11 +29,11 @@
 			border-radius: 50%;
 			font-size: 30px;
 			text-align: center;
-			padding-top: 9px;
 			display: inline-block;
 			color: @white;
 			width: 44px;
 			height: 44px;
+			line-height: inherit;
 			font-style: normal;
 			font-weight: normal;
 			font-variant: normal;
@@ -179,6 +177,7 @@
 							opacity: 0.7;
 							top: 0;
 							z-index: 110;
+							line-height: 40px;
 
 							.icon3 {
 							    position: absolute;
@@ -192,10 +191,10 @@
 								font-size: 16px;
 								border: 2px solid @white;
 								text-align: center;
-								padding-top: 10px;
 								color: @white;
 								width: 40px;
 								height: 40px;
+								line-height: inherit;
 							}
 						}
 					}
@@ -382,9 +381,12 @@
 	 		}
 	 	}
 	 	@media (min-width: @min-small ){
+	 		.centered {
+		  		line-height: 94px;
+			}
+
 	 		.icon1 {
 				font-size: 60px;
-				padding-top: 19px;
 				width: 94px;
 				height: 94px;
 			}
@@ -393,7 +395,6 @@
 			  display: inline-block;
 			  height: 140px;
 			  vertical-align: middle;
-
 			}
 
 	 	}
