@@ -6064,21 +6064,21 @@ a:hover {
   font-size: 18px;
 }
 #about .h-title1 {
-  font-size: 24px;
+  font-size: 33px;
   font-family: RobotoThin;
-  /*		padding-left: 25px;*/
   margin-top: 20px;
   margin-bottom: 10px;
   font-weight: 200;
 }
 #about .h-title2 {
   font-size: 28px;
-  /*		padding-left: 25px;*/
   margin-top: 20px;
   margin-bottom: 10px;
+  font-family: RobotoThin;
 }
 #about .h-title3 {
-  font-size: 30px;
+  font-size: 36px;
+  font-family: RobotoThin;
 }
 #about .img-circle {
   width: 150px;
@@ -6109,10 +6109,12 @@ a:hover {
 #about #founder p {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: RobotoLight;
+  font-size: 12pt;
 }
 #about #founder h1 {
   color: #3192d0;
-  font-size: 18pt;
+  font-size: 24pt;
   font-weight: normal;
   margin-top: 70px;
   margin-bottom: 10px;
@@ -6260,7 +6262,8 @@ a:hover {
   padding: 5px;
   text-align: left;
   line-height: 36px;
-  font-size: 30px;
+  font-size: 33px;
+  font-family: RobotoThin;
   color: #ffffff;
 }
 #home .main-content #slider1_container .jssora21l,
@@ -6404,7 +6407,7 @@ a:hover {
   width: 100%;
 }
 #home .main-content .bcg-slide .col-center .item-bcg .clamped {
-  line-height: 1.5;
+  line-height: 1.2;
   overflow: hidden;
 }
 #home .main-content .bcg-slide .col-center .item-bcg .clamped-ml {
@@ -6419,15 +6422,15 @@ a:hover {
   font-size: 13pt;
   font-family: RobotoCondensedRegular;
   color: #7a4b34;
-  padding: 10px 10px 0px 10px;
+  padding: 11px 20px 0px 20px;
 }
 #home .main-content .bcg-slide .col-center .item-bcg h2 {
   font-size: 18pt;
   font-family: RobotoCondensedLight;
   color: #492c1e;
-  padding: 5px 10px 0px 10px;
+  padding: 2px 20px 0px 20px;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 #home .main-content .bcg-slide .col-center .item-bcg p {
   font-size: 12pt;
@@ -6544,7 +6547,7 @@ a:hover {
 }
 @media (min-width: 768px) {
   #home .main-content .centered {
-    line-height: 94px;
+    line-height: 87px;
   }
   #home .main-content .icon1 {
     font-size: 60px;
@@ -6747,7 +6750,7 @@ a:hover {
 }
 #apps-int .apps-content h2 {
   font-family: RobotoThin;
-  font-size: 23pt;
+  font-size: 24pt;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -6761,15 +6764,15 @@ a:hover {
   font-weight: bold;
 }
 #apps-int .apps-content p {
-  font-family: RobotoThin;
-  font-size: 12pt;
+  font-family: RobotoLight;
+  font-size: 11pt;
   color: #ffffff;
   margin-bottom: 15px;
   margin-top: 15px;
 }
 #apps-int .apps-content ul {
-  font-family: RobotoThin;
-  font-size: 12pt;
+  font-family: RobotoLight;
+  font-size: 11pt;
   margin-bottom: 55px;
   margin-top: 15px;
 }
@@ -6900,8 +6903,8 @@ a:hover {
 #contact .contact-content .form-bcg .form-wrapper form label {
   font-size: 16pt;
   font-family: RobotoLight;
+  font-weight: bold;
   color: #492c1e;
-  /*	margin-top: 25px;*/
   margin-bottom: 15px;
   float: left;
 }
@@ -7105,20 +7108,20 @@ a:hover {
   font-size: 13pt;
   font-family: RobotoCondensedRegular;
   color: #7a4b34;
-  padding: 10px 10px 0px 10px;
+  padding: 10px 20px 0px 20px;
 }
 #event .event-content .col-center .item-bcg h2 {
   font-size: 18pt;
   font-family: RobotoCondensedLight;
   color: #492c1e;
-  padding: 5px 10px 0px 10px;
+  padding: 2px 20px 0px 20px;
 }
 #event .event-content .col-center .item-bcg p {
   font-size: 12pt;
   font-family: RobotoCondensedLight;
   color: #000000;
-  padding: 0px 10px;
-  text-align: justify;
+  padding: 0px 20px 10px 20px;
+  text-align: left;
   background: inherit;
   /*to hide ellipsis*/
 }
@@ -7173,14 +7176,14 @@ a:hover {
   margin: 15px 15px 15px 15px;
 }
 #events-int .event-bcg h2 {
-  font-size: 18px;
+  font-size: 27px;
   font-family: RobotoThin;
   color: #492c1e;
   margin: 15px 15px 15px 15px;
 }
 #events-int .event-bcg p {
-  font-size: 12px;
-  font-family: RobotoThin;
+  font-size: 14px;
+  font-family: RobotoRegular;
   color: #000000;
   margin: 15px 15px 15px 15px;
 }
@@ -7193,14 +7196,13 @@ a:hover {
 #events-int .back-list {
   background-color: #f0f0f0;
   border: 1px solid #c9c9c9;
-  font-size: 14px;
+  font-size: 17px;
   text-align: center;
   padding: 5px 5px;
   color: #c9c9c9;
   position: absolute;
   top: -17px;
   right: 20px;
-  word-spacing: -10px;
 }
 /*@import "fonts/icon-fonts-ie7-codes.css";
 @import "fonts/icon-fonts-ie7.css";
