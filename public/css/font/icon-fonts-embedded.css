@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'icon-fonts';
-  src: url('/../../../public/fonts/icon-fonts.eot?63099173');
-  src: url('/../../../public/fonts/icon-fonts.eot?63099173#iefix') format('embedded-opentype'),
-       url('/../../../public/fonts/icon-fonts.svg?63099173#icon-fonts') format('svg');
+  src: url('../../fonts/icon-fonts.eot?63099173');
+  src: url('../../fonts/icon-fonts.eot?63099173#iefix') format('embedded-opentype'),
+       url('../../fonts/icon-fonts.svg?63099173#icon-fonts') format('svg');
   font-weight: normal;
   font-style: normal;
 }

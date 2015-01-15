@@ -1,13 +1,6 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <script>
-        $(document).ready(function() {
-            if ( $.browser.msie && $.browser.version < 9) {
-              $('body').html( 'your browser is outdated' );
-            }
-        });
-    </script>
 <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,18 +27,18 @@
 </head>
 <body id="home">
   <div class="main-content">
-    <section id="banner">
-        <div id="slider1_container" style="width: 1300px; height: 500px">
+    <section id="banner" class="container-fluid">
+        <div id="slider1_container" style="">
           <div class="slider" u="slides">
             <div>
-              <img class="slider-img" u="image" src="public/image/home/skrollr-img-01-1.jpg"/>
+              <img u="image" src="public/image/home/skrollr-img-01-1.jpg"/>
                 <img class="caption-img" u="caption"  t="R"  src="public/image/home/banner.png"/>
                 <div class="caption-txt" u="caption"  t="R">
                   A Unique Experience with our Cutting Edge Mobile Payment Solution
                 </div>
             </div>
             <div>
-              <img class="slider-img" u="image" src="public/image/home/skrollr-img-01-2.jpg"/>
+              <img u="image" src="public/image/home/skrollr-img-01-2.jpg"/>
               <img class="caption-img" u="caption"  t="R"  src="public/image/home/banner.png"/>
               <div class="caption-txt" u="caption"  t="R">
                 A Unique Experience with our Cutting Edge Mobile Payment Solution
@@ -150,7 +143,7 @@
                   <div class="shadow col-center">
                     <a href="partials/events-int.html" class="item-bcg">
                       <img src="public/image/events/event-001.jpg">
-                        <h3>17 July 2013</h1>
+                        <h3>17 July 2013</h3>
                         <h2>Vigosmart Box Office now in Google Android Market</h2>
                         <p class="ellipsis-container clamped clamped-ml">
                           <span class="ellipsis">
@@ -166,119 +159,120 @@
             </div>
           </div><!-- /.container -->  
         </div>
-    </section>
-    <section id="page-3">
-      <div class="btwn-section">
-        <div class="container">
-          <div class="row">
-            <div class="block">
-              <a href="#bcg-3">
-                <div class="centered">
-                  <i class="icon1 icon-angle-down"></i>
-                </div><!-- /.centered -->
-              </a>
-            </div><!-- /.block -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->   
-      </div>
-      <div class="bcg-slide" id="bcg-3">
-        <div class="container">
-          <div class="row">
-            <h1 class="h1-style">APPLICATIONS</h1>
-            <a href="partials/apps.html" class="icon-sqr"><i class="icon2 icon-angle-right"></i></a>
-            <h2 class="h2-style">Our Ideas which has got Real</h2>
-              <div class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-4 col-md-offset-0 col-md-4">
-                <div class="shadow col-center">
-                  <a href="partials/apps-int.html" class="app-bcg">
-                    <div class="col-xs-6">
-                      <img src="public/image/apps/concert-mania-logo.png" class="app-logo">
-                    </div>
-                    <div class="col-xs-6">
-                      <p class="app-text">Concert Mania</p>
-                    </div>
-                    <div class="phone">
-                      <div class="phone-app">
-                        <div><img src="public/image/apps/app-001.jpg"/></div>
-                      </div>
-                    </div>
-                    <div class="hover-item">
-                      <i class="icon3 icon-angle-right"></i>
-                    </div>
-                  </a>
-                  <div class="web-store">
-                    <img src="public/image/apps/android.png">
-                    <img src="public/image/apps/ios.png">
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-4 col-md-offset-0 col-md-4">
-                <div class="shadow col-center">
-                  <a href="" class="app-bcg">
-                    <div class="col-xs-6">
-                      <img src="public/image/apps/concert-mania-logo.png" class="app-logo">
-                    </div>
-                    <div class="col-xs-6">
-                      <p class="app-text">Concert Mania</p>
-                    </div>
-                    <div class="phone">
-                      <div class="phone-app">
-                        <div><img src="public/image/apps/app-001.jpg"/></div>
-                      </div>
-                    </div>
-                    <div class="hover-item">
-                      <i class="icon3 icon-angle-right"></i>
-                    </div>
-                  </a>
-                  <div class="web-store">
-                    <img src="public/image/apps/android.png">
-                    <img src="public/image/apps/ios.png">
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-4 col-md-offset-0 col-md-4">
-                <div class="shadow col-center">
-                  <a href="" class="app-bcg">
-                    <div class="col-xs-6">
-                      <img src="public/image/apps/concert-mania-logo.png" class="app-logo">
-                    </div>
-                    <div class="col-xs-6">
-                      <p class="app-text">Concert Mania</p>
-                    </div>
-                    <div class="phone">
-                      <div class="phone-app">
-                        <div><img src="public/image/apps/app-001.jpg"/></div>
-                      </div>
-                    </div>
-                    <div class="hover-item">
-                      <i class="icon3 icon-angle-right"></i>
-                    </div>
-                  </a>
-                  <div class="web-store">
-                    <img src="public/image/apps/android.png">
-                    <img src="public/image/apps/ios.png">
-                  </div>
-                </div>
-              </div>                                                                                                              
-            </div>
-          </div><!-- /.container --> 
-        </div>
+      </section>
+      <section id="page-3">
         <div class="btwn-section">
           <div class="container">
             <div class="row">
               <div class="block">
-                <a href="#banner">
+                <a href="#bcg-3">
                   <div class="centered">
-                    <i class="icon1 icon-angle-up"></i>
+                    <i class="icon1 icon-angle-down"></i>
                   </div><!-- /.centered -->
                 </a>
               </div><!-- /.block -->
             </div><!-- /.row -->
-          </div><!-- /.container -->   
+          </div><!-- /.container -->
         </div>
-      </div>
+        <div class="bcg-slide" id="bcg-3">
+          <div class="container">
+            <div class="row">
+              <h1 class="h1-style">APPLICATIONS</h1>
+              <a href="partials/apps.html" class="icon-sqr"><i class="icon2 icon-angle-right"></i></a>
+              <h2 class="h2-style">Our Ideas which has got Real</h2>
+                <div class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-4 col-md-offset-0 col-md-4">
+                  <div class="shadow col-center">
+                    <a href="partials/apps-int.html" class="app-bcg">
+                      <div class="col-xs-6">
+                        <img src="public/image/apps/concert-mania-logo.png" class="app-logo">
+                      </div>
+                      <div class="col-xs-6">
+                        <p class="app-text">Concert Mania</p>
+                      </div>
+                      <div class="phone">
+                        <div class="phone-app">
+                          <div><img src="public/image/apps/app-001.jpg"/></div>
+                        </div>
+                      </div>
+                      <div class="hover-item">
+                        <i class="icon3 icon-angle-right"></i>
+                      </div>
+                    </a>
+                    <div class="web-store">
+                      <img src="public/image/apps/android.png">
+                      <img src="public/image/apps/ios.png">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-4 col-md-offset-0 col-md-4">
+                  <div class="shadow col-center">
+                    <a href="" class="app-bcg">
+                      <div class="col-xs-6">
+                        <img src="public/image/apps/concert-mania-logo.png" class="app-logo">
+                      </div>
+                      <div class="col-xs-6">
+                        <p class="app-text">Concert Mania</p>
+                      </div>
+                      <div class="phone">
+                        <div class="phone-app">
+                          <div><img src="public/image/apps/app-001.jpg"/></div>
+                        </div>
+                      </div>
+                      <div class="hover-item">
+                        <i class="icon3 icon-angle-right"></i>
+                      </div>
+                    </a>
+                    <div class="web-store">
+                      <img src="public/image/apps/android.png">
+                      <img src="public/image/apps/ios.png">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-4 col-md-offset-0 col-md-4">
+                  <div class="shadow col-center">
+                    <a href="" class="app-bcg">
+                      <div class="col-xs-6">
+                        <img src="public/image/apps/concert-mania-logo.png" class="app-logo">
+                      </div>
+                      <div class="col-xs-6">
+                        <p class="app-text">Concert Mania</p>
+                      </div>
+                      <div class="phone">
+                        <div class="phone-app">
+                          <div><img src="public/image/apps/app-001.jpg"/></div>
+                        </div>
+                      </div>
+                      <div class="hover-item">
+                        <i class="icon3 icon-angle-right"></i>
+                      </div>
+                    </a>
+                    <div class="web-store">
+                      <img src="public/image/apps/android.png">
+                      <img src="public/image/apps/ios.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.container -->
+          </div>
+          <div class="btwn-section">
+            <div class="container">
+              <div class="row">
+                <div class="block">
+                  <a href="#banner">
+                    <div class="centered">
+                      <i class="icon1 icon-angle-up"></i>
+                    </div><!-- /.centered -->
+                  </a>
+                </div><!-- /.block -->
+              </div><!-- /.row -->
+            </div><!-- /.container -->
+          </div>
+        <!--</div>-->
+      </section>
     </section>
   </div> <!-- /.main-content -->
-</section>
+<!--</section>-->
   <footer class="footer">
     <div class="footer-contact">
       <div class="container">

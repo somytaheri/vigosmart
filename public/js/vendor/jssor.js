@@ -1,6 +1,9 @@
 ﻿/*
-* Jssor 18.0
+* Jssor 19.0
 * http://www.jssor.com/
+*
+* Licensed under the MIT license:
+* http://www.opensource.org/licenses/MIT
 * 
 * TERMS OF USE - Jssor
 * 
@@ -674,7 +677,7 @@ var $Jssor$ = window.$Jssor$ = new function () {
         return Extend({}, instance);
     };
 
-    function Construct(instance, constructor) {
+    function Construct(instance) {
         instance.constructor === Construct.caller && instance.$Construct && instance.$Construct();
     }
 
@@ -692,7 +695,7 @@ var $Jssor$ = window.$Jssor$ = new function () {
         return event || window.event;
     }
 
-    GetEvent = GetEvent;
+    _This.$GetEvent = GetEvent;
 
     _This.$EventSrc = function (event) {
         event = GetEvent(event);
@@ -1001,7 +1004,9 @@ var $Jssor$ = window.$Jssor$ = new function () {
             var transformProperty = GetTransformProperty(elmt);
             if (transformProperty) {
                 var transformValue = "rotate(" + rotate % 360 + "deg) scale(" + scale + ")";
-                if (IsBrowserChrome() && webkitVersion > 535)
+
+                //needed for touch device, no need for desktop device
+                if (IsBrowserChrome() && webkitVersion > 535 && "ontouchstart" in window)
                     transformValue += " perspective(2000px)";
 
                 elmt.style[transformProperty] = transformValue;
@@ -1627,6 +1632,15 @@ var $Jssor$ = window.$Jssor$ = new function () {
         _This.$CssDisplay(elmt, "none");
     };
 
+    _This.$EnableElement = function (elmt, notEnable) {
+        if (notEnable) {
+            _This.$Attribute(elmt, "disabled", true);
+        }
+        else {
+            _This.$RemoveAttribute(elmt, "disabled");
+        }
+    };
+
     _This.$HideElements = function (elmts) {
         for (var i = 0; i < elmts.length; i++) {
             _This.$HideElement(elmts[i]);
@@ -1891,7 +1905,10 @@ var $Jssor$ = window.$Jssor$ = new function () {
         if (createCopy)
             template = CloneNode(template);
 
-        var templateHolders = $Jssor$.$GetElementsByTag(template, tagName);
+        var templateHolders = FindChildren(template, tagName);
+        if (!templateHolders.length)
+            templateHolders = $Jssor$.$GetElementsByTag(template, tagName);
+
         for (var j = templateHolders.length -1; j > -1; j--) {
             var templateHolder = templateHolders[j];
             var replaceItem = CloneNode(replacer);
@@ -1913,7 +1930,7 @@ var $Jssor$ = window.$Jssor$ = new function () {
         var _OriginClassName;
 
         var _IsMouseDown;   //class name 'dn'
-        var _IsActive;      //class name 'av'
+        var _IsSelected;    //class name 1(active): 'av', 2(passive): 'pv'
         var _IsDisabled;    //class name 'ds'
 
         function Highlight() {
@@ -1925,7 +1942,10 @@ var $Jssor$ = window.$Jssor$ = new function () {
             else if (_IsMouseDown) {
                 className += 'dn';
             }
-            else if (_IsActive) {
+            else if (_IsSelected == 2) {
+                className += "pv";
+            }
+            else if (_IsSelected) {
                 className += "av";
             }
 
@@ -1956,14 +1976,14 @@ var $Jssor$ = window.$Jssor$ = new function () {
             Highlight();
         };
 
-        _Self.$Activate = function (activate) {
+        _Self.$Selected = function (activate) {
             if (activate != undefined) {
-                _IsActive = activate;
+                _IsSelected = activate;
 
                 Highlight();
             }
             else {
-                return _IsActive;
+                return _IsSelected;
             }
         };
 
@@ -2020,8 +2040,8 @@ var $Jssor$ = window.$Jssor$ = new function () {
     _This.$CssPosition = CssProxy("position");
     _This.$CssDisplay = CssProxy("display");
     _This.$CssZIndex = CssProxy("zIndex", 1);
-    _This.$CssFloat = function (elmt, float) {
-        return Css(elmt, IsBrowserIE() ? "styleFloat" : "cssFloat", float);
+    _This.$CssFloat = function (elmt, floatValue) {
+        return Css(elmt, IsBrowserIE() ? "styleFloat" : "cssFloat", floatValue);
     };
     _This.$CssOpacity = function (elmt, opacity, ie9EarlierForce) {
         if (opacity != undefined) {
@@ -2537,21 +2557,22 @@ $JssorAnimator$ = function (delay, duration, options, elmt, fromStyles, toStyles
     var RequestAnimationFrame = window.requestAnimationFrame
     || window.webkitRequestAnimationFrame
     || window.mozRequestAnimationFrame
-    || window.msRequestAnimationFrame
-    || function (callback) {
-        $Jssor$.$Delay(callback, options.$Interval);
-        //$JssorDebug$.$Log("custom frame");
-    };
+    || window.msRequestAnimationFrame;
 
-    //var RequestAnimationFrame = function (callback) {
-    //    $Jssor$.$Delay(callback, options.$Interval);
-    //    $JssorDebug$.$Log("custom frame");
-    //};
+    if ($Jssor$.$IsBrowserSafari() && $Jssor$.$BrowserVersion() < 7) {
+        RequestAnimationFrame = null;
+
+        $JssorDebug$.$Log("Custom animation frame for safari before 7.");
+    }
+
+    RequestAnimationFrame = RequestAnimationFrame || function (callback) {
+        $Jssor$.$Delay(callback, options.$Interval);
+    };
 
     function ShowFrame() {
         if (_AutoPlay) {
             var now = $Jssor$.$GetNow();
-            var timeOffset = Math.min(now - _TimeStampLastFrame, 100);
+            var timeOffset = Math.min(now - _TimeStampLastFrame, options.$IntervalMax);
             var timePosition = _Position_Current + timeOffset * _PlayDirection;
             _TimeStampLastFrame = now;
 
@@ -2728,7 +2749,8 @@ $JssorAnimator$ = function (delay, duration, options, elmt, fromStyles, toStyles
     //Constructor  1
     {
         options = $Jssor$.$Extend({
-            $Interval: 15
+            $Interval: 16,
+            $IntervalMax: 50
         }, options);
 
         //Sodo statement, for development time intellisence only

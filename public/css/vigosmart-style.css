@@ -6222,6 +6222,9 @@ a:hover {
   font-size: 55px;
   color: #c9c9c9;
 }
+#home .main-content #banner {
+  margin: 0 auto;
+}
 #home .main-content #slider1_container {
   background-color: #6c4796;
   position: fixed;
@@ -6229,22 +6232,20 @@ a:hover {
   top: 0px;
   left: 0px;
   overflow: hidden;
+  width: 1300px;
+  height: 500px;
 }
 #home .main-content #slider1_container .slider {
   cursor: move;
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 100%;
-  height: 100%;
+  width: 1300px;
+  height: 500px;
   overflow: hidden;
 }
 #home .main-content #slider1_container .slider img {
   border: none;
-}
-#home .main-content #slider1_container .slider .slider-img {
-  width: 100%;
-  height: 100%;
 }
 #home .main-content #slider1_container .slider .caption-img {
   position: absolute;
@@ -6303,9 +6304,15 @@ a:hover {
   margin-top: 38%;
 }
 #home .main-content .bcg-slide {
+  background-color: #f0f0f0;
   background-position: center center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
   /*rounded drop shadows*/
   /*End of rounded drop shadows*/
 }
@@ -6354,6 +6361,10 @@ a:hover {
   width: 100%;
   height: 100%;
   background: #1c1c1c;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
   opacity: 0.7;
   top: 0;
   z-index: 110;
@@ -6630,6 +6641,10 @@ a:hover {
   width: 100%;
   height: 100%;
   background: #1c1c1c;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
   opacity: 0.7;
   top: 0;
   z-index: 110;
@@ -6937,6 +6952,10 @@ a:hover {
   margin-bottom: 10%;
   height: 396px;
   background: #ffffff no-repeat;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
   opacity: 0.8;
   font-size: 28px;
   font-family: RobotoLight;
@@ -7041,6 +7060,10 @@ a:hover {
   width: 100%;
   height: 100%;
   background: #1c1c1c;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
   opacity: 0.7;
   top: 0;
   line-height: 40px;
