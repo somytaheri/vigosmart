@@ -6173,33 +6173,32 @@ a:hover {
   }
 }
 /*  /#about  */
-#home .main-content {
-  background-color: #f0f0f0;
+#home {
   /* This parent can be any width and height */
   /* The ghost, nudged to maintain perfect centering */
   /* The element to be centered, can
-		   also be of any width and height */
+		 also be of any width and height */
   /*-----------------------Slider begin-----------------------*/
   /*-----------------------Slider end-----------------------*/
 }
-#home .main-content .btwn-section {
+#home .btwn-section {
   background-color: #f0f0f0;
 }
-#home .main-content .block {
+#home .block {
   text-align: center;
 }
-#home .main-content .block:before {
+#home .block:before {
   content: '';
   display: inline-block;
   height: 72px;
   vertical-align: middle;
 }
-#home .main-content .centered {
+#home .centered {
   display: inline-block;
   vertical-align: middle;
   line-height: 44px;
 }
-#home .main-content .icon1 {
+#home .icon1 {
   background-color: #9c86aa;
   border-radius: 50%;
   font-size: 30px;
@@ -6214,7 +6213,7 @@ a:hover {
   font-variant: normal;
   pointer-events: none;
 }
-#home .main-content .icon4 {
+#home .icon4 {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -6222,10 +6221,10 @@ a:hover {
   font-size: 55px;
   color: #c9c9c9;
 }
-#home .main-content #banner {
+#home #banner {
   margin: 0 auto;
 }
-#home .main-content #slider1_container {
+#home #slider1_container {
   background-color: #6c4796;
   position: fixed;
   margin: 0 auto;
@@ -6235,7 +6234,7 @@ a:hover {
   width: 1300px;
   height: 500px;
 }
-#home .main-content #slider1_container .slider {
+#home #slider1_container .slider {
   cursor: move;
   position: absolute;
   left: 0px;
@@ -6244,17 +6243,17 @@ a:hover {
   height: 500px;
   overflow: hidden;
 }
-#home .main-content #slider1_container .slider img {
+#home #slider1_container .slider img {
   border: none;
 }
-#home .main-content #slider1_container .slider .caption-img {
+#home #slider1_container .slider .caption-img {
   position: absolute;
   width: 250px;
   height: 262px;
   top: 50px;
   left: 880px;
 }
-#home .main-content #slider1_container .slider .caption-txt {
+#home #slider1_container .slider .caption-txt {
   position: absolute;
   width: 480px;
   height: 120px;
@@ -6267,10 +6266,10 @@ a:hover {
   font-family: RobotoThin;
   color: #ffffff;
 }
-#home .main-content #slider1_container .jssora21l,
-#home .main-content #slider1_container .jssora21r,
-#home .main-content #slider1_container .jssora21ldn,
-#home .main-content #slider1_container .jssora21rdn {
+#home #slider1_container .jssora21l,
+#home #slider1_container .jssora21r,
+#home #slider1_container .jssora21ldn,
+#home #slider1_container .jssora21rdn {
   position: absolute;
   cursor: pointer;
   display: block;
@@ -6279,31 +6278,31 @@ a:hover {
   width: 55px;
   height: 55px;
 }
-#home .main-content #slider1_container .jssora21l {
+#home #slider1_container .jssora21l {
   background-position: -3px -33px;
 }
-#home .main-content #slider1_container .jssora21r {
+#home #slider1_container .jssora21r {
   background-position: -63px -33px;
 }
-#home .main-content #slider1_container .jssora21l:hover {
+#home #slider1_container .jssora21l:hover {
   background-position: -123px -33px;
 }
-#home .main-content #slider1_container .jssora21r:hover {
+#home #slider1_container .jssora21r:hover {
   background-position: -183px -33px;
 }
-#home .main-content #slider1_container .jssora21ldn {
+#home #slider1_container .jssora21ldn {
   background-position: -243px -33px;
 }
-#home .main-content #slider1_container .jssora21rdn {
+#home #slider1_container .jssora21rdn {
   background-position: -303px -33px;
 }
-#home .main-content #page-position {
+#home #page-position {
   position: relative;
   z-index: 9;
   width: 100%;
   margin-top: 38%;
 }
-#home .main-content .bcg-slide {
+#home .bcg-slide {
   background-color: #f0f0f0;
   background-position: center center;
   background-repeat: no-repeat;
@@ -6316,7 +6315,7 @@ a:hover {
   /*rounded drop shadows*/
   /*End of rounded drop shadows*/
 }
-#home .main-content .bcg-slide .shadow {
+#home .bcg-slide .shadow {
   position: relative;
   display: table;
   background: #e9e9e9;
@@ -6324,8 +6323,8 @@ a:hover {
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
-#home .main-content .bcg-slide .shadow:before,
-#home .main-content .bcg-slide .shadow:after {
+#home .bcg-slide .shadow:before,
+#home .bcg-slide .shadow:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -6339,23 +6338,23 @@ a:hover {
   -moz-border-radius: 30%;
   border-radius: 30%;
 }
-#home .main-content .bcg-slide .col-center {
+#home .bcg-slide .col-center {
   margin-bottom: 45px;
   float: none;
   margin-right: auto;
   margin-left: auto;
   max-width: 310px;
 }
-#home .main-content .bcg-slide .col-center a {
+#home .bcg-slide .col-center a {
   position: relative;
   float: left;
   display: block;
   text-decoration: none;
 }
-#home .main-content .bcg-slide .col-center a .hover-item {
+#home .bcg-slide .col-center a .hover-item {
   display: none;
 }
-#home .main-content .bcg-slide .col-center a:hover .hover-item {
+#home .bcg-slide .col-center a:hover .hover-item {
   display: block;
   position: absolute;
   width: 100%;
@@ -6370,7 +6369,7 @@ a:hover {
   z-index: 110;
   line-height: 40px;
 }
-#home .main-content .bcg-slide .col-center a:hover .hover-item .icon3 {
+#home .bcg-slide .col-center a:hover .hover-item .icon3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6387,55 +6386,55 @@ a:hover {
   height: 40px;
   line-height: inherit;
 }
-#home .main-content .bcg-slide .col-center .item-bcg {
+#home .bcg-slide .col-center .item-bcg {
   background-color: #e7e7e7;
   /* The ellipsis classes reveal a '...' if there is more content that isn't being displayed */
   /* The ellipsis-container class adds padding to the container to stop the ellipsis clipping text */
   /* Clamping is just a mechanism to limit the number of lines that can be displayed in a container */
   /*End of ellipsis*/
 }
-#home .main-content .bcg-slide .col-center .item-bcg .ellipsis-container {
+#home .bcg-slide .col-center .item-bcg .ellipsis-container {
   padding-right: 1em;
   position: relative;
 }
-#home .main-content .bcg-slide .col-center .item-bcg .ellipsis {
+#home .bcg-slide .col-center .item-bcg .ellipsis {
   background: inherit;
   display: inline;
 }
-#home .main-content .bcg-slide .col-center .item-bcg .ellipsis:before,
-#home .main-content .bcg-slide .col-center .item-bcg .ellipsis:after {
+#home .bcg-slide .col-center .item-bcg .ellipsis:before,
+#home .bcg-slide .col-center .item-bcg .ellipsis:after {
   background: inherit;
   position: absolute;
 }
-#home .main-content .bcg-slide .col-center .item-bcg .ellipsis:before {
+#home .bcg-slide .col-center .item-bcg .ellipsis:before {
   content: '\2026';
   bottom: 0;
   right: 4pt;
 }
-#home .main-content .bcg-slide .col-center .item-bcg .ellipsis:after {
+#home .bcg-slide .col-center .item-bcg .ellipsis:after {
   content: '';
   height: 100%;
   width: 100%;
 }
-#home .main-content .bcg-slide .col-center .item-bcg .clamped {
+#home .bcg-slide .col-center .item-bcg .clamped {
   line-height: 1.2;
   overflow: hidden;
 }
-#home .main-content .bcg-slide .col-center .item-bcg .clamped-ml {
+#home .bcg-slide .col-center .item-bcg .clamped-ml {
   /* Clamp to 4 lines, ie line-height x 2: */
   max-height: 6em;
 }
-#home .main-content .bcg-slide .col-center .item-bcg img {
+#home .bcg-slide .col-center .item-bcg img {
   width: 100%;
   border: none;
 }
-#home .main-content .bcg-slide .col-center .item-bcg h3 {
+#home .bcg-slide .col-center .item-bcg h3 {
   font-size: 13pt;
   font-family: RobotoCondensedRegular;
   color: #7a4b34;
   padding: 11px 20px 0px 20px;
 }
-#home .main-content .bcg-slide .col-center .item-bcg h2 {
+#home .bcg-slide .col-center .item-bcg h2 {
   font-size: 18pt;
   font-family: RobotoCondensedLight;
   color: #492c1e;
@@ -6443,7 +6442,7 @@ a:hover {
   margin-top: 10px;
   margin-bottom: 15px;
 }
-#home .main-content .bcg-slide .col-center .item-bcg p {
+#home .bcg-slide .col-center .item-bcg p {
   font-size: 12pt;
   font-family: RobotoCondensedLight;
   color: #000000;
@@ -6452,62 +6451,62 @@ a:hover {
   background: inherit;
   /*to hide ellipsis*/
 }
-#home .main-content #bcg-2 {
+#home #bcg-2 {
   background-image: url('../image/home/skrollr-img-02.jpg');
   min-height: 80%;
 }
-#home .main-content #bcg-2 .shadow a {
+#home #bcg-2 .shadow a {
   height: 430px;
 }
-#home .main-content #bcg-3 {
+#home #bcg-3 {
   background-image: url('../image/home/skrollr-img-03.jpg');
   min-height: 80%;
 }
-#home .main-content .app-bcg {
+#home .app-bcg {
   background: rgba(231, 231, 231, 0.8);
 }
-#home .main-content .app-bcg .app-logo {
+#home .app-bcg .app-logo {
   padding: 15px 0 15px 0;
 }
-#home .main-content .app-bcg .app-text {
+#home .app-bcg .app-text {
   font-family: RobotoLight;
   font-size: 28px;
   color: #492c1e;
   padding: 40px 0 15px 0;
   line-height: 1em;
 }
-#home .main-content .app-bcg .phone {
+#home .app-bcg .phone {
   display: none;
 }
-#home .main-content .web-store {
+#home .web-store {
   position: absolute;
   top: -22.5px;
   right: 10px;
   z-index: 120;
 }
-#home .main-content .web-store img {
+#home .web-store img {
   float: left;
   padding-left: 5px;
 }
-#home .main-content .h1-style {
+#home .h1-style {
   font-size: 21pt;
   font-family: RobotoThin;
   margin-top: 50px;
   padding-left: 25px;
   float: left;
 }
-#home .main-content .icon-sqr {
+#home .icon-sqr {
   float: right;
   margin-top: 54px;
   padding-right: 25px;
 }
-#home .main-content .icon2 {
+#home .icon2 {
   background-color: #61b9e7;
   font-size: 30px;
   text-align: center;
   color: #ffffff;
 }
-#home .main-content .h2-style {
+#home .h2-style {
   font-size: 12pt;
   font-family: RobotoCondensedLight;
   margin-top: 10px;
@@ -6516,7 +6515,7 @@ a:hover {
   clear: both;
 }
 @media (min-width: 450px) {
-  #home .main-content .app-bcg {
+  #home .app-bcg {
     background: rgba(231, 231, 231, 0.8);
     /* Old browsers */
     background: -moz-linear-gradient(top, rgba(231, 231, 231, 0.8) 0%, rgba(231, 231, 231, 0.8) 60%, #ffffff 60%, #ffffff 100%);
@@ -6532,7 +6531,7 @@ a:hover {
     background: linear-gradient(top, rgba(231, 231, 231, 0.8) 0%, rgba(231, 231, 231, 0.8) 60%, #ffffff 60%, #ffffff 100%);
     /* W3C */
   }
-  #home .main-content .app-bcg .phone {
+  #home .app-bcg .phone {
     display: block;
     background: url(../image/apps/phone.png) no-repeat;
     background-size: 162px 304px;
@@ -6544,28 +6543,28 @@ a:hover {
     clear: both;
     overflow: hidden;
   }
-  #home .main-content .app-bcg .phone .phone-app {
+  #home .app-bcg .phone .phone-app {
     position: absolute;
     margin: 0px 5px 5px 0px;
     top: 35px;
     left: 12px;
     overflow: hidden;
   }
-  #home .main-content .app-bcg .phone .phone-app img {
+  #home .app-bcg .phone .phone-app img {
     width: 139px;
     height: 229px;
   }
 }
 @media (min-width: 768px) {
-  #home .main-content .centered {
+  #home .centered {
     line-height: 87px;
   }
-  #home .main-content .icon1 {
+  #home .icon1 {
     font-size: 60px;
     width: 94px;
     height: 94px;
   }
-  #home .main-content .block:before {
+  #home .block:before {
     content: '';
     display: inline-block;
     height: 140px;
@@ -6573,10 +6572,10 @@ a:hover {
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  #home .main-content .app-bcg .app-logo {
+  #home .app-bcg .app-logo {
     width: 80px;
   }
-  #home .main-content .app-bcg .app-text {
+  #home .app-bcg .app-text {
     font-size: 22px;
   }
 }
