@@ -6896,8 +6896,6 @@ a:hover {
 #contact .contact-content .form-bcg {
   padding-top: 25px;
   padding-bottom: 25px;
-  /*width: 405px;*/
-  /*z-index: 100;*/
   height: 396px;
   background: #ffffff no-repeat;
   opacity: 0.8;
@@ -6911,7 +6909,6 @@ a:hover {
   font-family: RobotoLight;
   color: #8a8a8a;
   border: none;
-  /*padding-left: 10px;*/
   margin: 0;
 }
 #contact .contact-content .form-bcg .form-wrapper form label {
@@ -6923,7 +6920,6 @@ a:hover {
   float: left;
 }
 #contact .contact-content .form-bcg .form-wrapper form input {
-  /*width: 334px;*/
   width: 100%;
   height: 33px;
   margin-bottom: 15px;
